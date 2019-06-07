@@ -5,6 +5,7 @@ body {
 }
 h1 {
   font-size: 40px;
+  text-decoration: underline;
 }
 
 .jumbotron {
@@ -15,22 +16,20 @@ h1 {
   box-shadow: 5px 5px 10px #888888;
 }
 
- #reveal h2{
+ #reveal {
   color: black;
   border-radius: 5px;
   background-color: #555555;
   text-align: center;
   box-shadow: 5px 5px 10px #888888;
   color: white;
+  margin-left: 2%;
+  margin-bottom:10px;
 }
   #reveal p{
-   color: black;
-   border-radius: 5px;
-   background-color: #555555;
-   text-align: center;
    font-size: 50px;
-   box-shadow: 5px 5px 10px #888888;
-   color: white;
+   text-decoration: underline;
+
 }
 
 #questionnaire {
