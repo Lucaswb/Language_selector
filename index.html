@@ -1,11 +1,92 @@
 <html>
-  <head>
-    <title>Calculator</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
-  <body>
-  </body>
-  </html>
+<head>
+  <title>Language Selector</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <div class="jumbotron">
+        <h1>The all purpose Language Selector</h1>
+      </div>
+      <div class="form-group">
+        <label for="name1">What's your name?</label>
+        <input id="name1" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="age1">How old are you?</label>
+        <input id="age1" class="form-control" type="text">
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="question1">
+            <div class="radio">
+              <p>When you have difficulty solving a problem, how do go about tackling it? <strong>Do you:</strong></p>
+              <label>
+                <input type="radio" name="question1" value="2" checked>
+                Hit your head against the wall
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question1" value="3">
+                Throw something at the computer
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question1" value="5">
+                Just start screaming
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question1" value="7">
+                work productivily until you find the solution
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>Do you like semicolons?</p>
+          <select class="form-control" id="question2">
+            <option value="11">no, I despise them</option>
+            <option value="13">Completely indifferent</option>
+            <option value="17">Yes, I wish I could add a semicolon to every sentence</option>
+          </select>
+          <p>What are your thoughts regarding loops?</p>
+          <select class="form-control" id="question3">
+            <option value="19">Loops are <em>amazing!!</em></option>
+            <option value="23">Completely indifferent</option>
+            <option value="29">Yes, I wish I could add a semicolon to every sentence</option>
+          </select>
+          <p>What kind of programming would you like to do?</p>
+          <select class="form-control" id="question3">
+            <option value="31">I'm all about websites!!</option>
+            <option value="37">I'd prefer to work on desktop Applications</option>
+            <option value="39">What's a "cloud"</option>
+            <option value="41">there are different types of programming?</option>
+          </select>
+
+
+
+        </div>
+      </div>
+      <div class="row">
+        <button type="submit" class="btn-default">What's my Language?</button>
+      </div>
+
+      <div class="row">
+        <div id="reveal">
+          <h2>Your language is ...</h2>
+          <div id ="languageReveal">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
