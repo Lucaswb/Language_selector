@@ -17,6 +17,11 @@ var prog = {
 
 
 $(document).ready(function() {
+  $("form#header").submit(function(event) {
+    $("form#questionnaire").show()
+    $("form#header .button").hide()
+    event.preventDefault()
+
 
   $("form#questionnaire").submit(function(event) {
     var prom1 = $("#name1").val().length;
@@ -28,7 +33,9 @@ $(document).ready(function() {
     var prom7 = $("#question4").val();
 
 
-    if ((prom2>0)&&(prom1>0)){
+
+
+    if ((prom1>0)&&(prom2>0)){
       $("#errorAge").hide()
       $("#errorName").hide()
       var result = (prom1*prom2*prom7*prom4*prom5*prom6*prom7)
@@ -44,7 +51,6 @@ $(document).ready(function() {
 
       $("#reveal").show()
       $("#languageReveal p").remove();
-      debugger;
       $("#languageReveal").append("<p></p>");
       $("#languageReveal p").append(lang_name);
       event.preventDefault()
@@ -73,6 +79,6 @@ $(document).ready(function() {
 
 
 
-
+    });
   });
 });
