@@ -1,6 +1,11 @@
 #reveal {
   display: none;
 }
+#errorName, #errorAge {
+  display: none;
+  color: red;
+  font-size: 12px;
+  font-style: italic;
 
 .row {
   margin-top: 5%;

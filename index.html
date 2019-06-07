@@ -16,19 +16,19 @@
         <div id="reveal">
           <h2>Your language is ...</h2>
           <div id ="languageReveal">
-            <!-- <p></p> -->
           </div>
         </div>
       </div>
 
       <div class="form-group">
-        <label for="name1">What's your name? <em>(this is required)</em></label>
+        <label for="name1">What's your name? <em>(this is required)</em><span id="errorName">     please insert a name</span></label>
         <input id="name1" class="form-control" type="text">
       </div>
       <div class="form-group">
-        <label for="age1">How old are you? <em>(so is this)</em></label>
+        <label for="age1">How old are you? <em>(so is this)</em><span id="errorAge">     please insert an age</span></label>
         <input id="age1" class="form-control" type="text">
       </div>
+      <span id="errorAge">please insert an age</span>
       <div class="form-group">
         <label for="num1">What's your Favorite number? <em>(this however is optional)</em></label>
         <input id="num1" class="form-control" type="text">

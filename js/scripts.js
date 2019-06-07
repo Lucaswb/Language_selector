@@ -29,6 +29,8 @@ $(document).ready(function() {
 
 
     if ((prom2>0)&&(prom1>0)){
+      $("#errorAge").hide()
+      $("#errorName").hide()
       var result = (prom1*prom2*prom7*prom4*prom5*prom6*prom7)
       if (prom3>0){
         result+=prom3;
@@ -45,10 +47,21 @@ $(document).ready(function() {
       debugger;
       $("#languageReveal").append("<p></p>");
       $("#languageReveal p").append(lang_name);
-      alert("hi")
       event.preventDefault()
+
     } else {
-      alert("this program requires your age and your name");
+      $("#reveal").hide()
+      if ((prom1===0)&&(prom2)){
+        $("#errorAge").hide()
+        $("#errorName").show()
+      } else if ((!prom2) && (prom1)) {
+        $("#errorName").hide()
+        $("#errorAge").show()
+      } else {
+        $("#errorAge").show()
+        $("#errorName").show()
+      }
+      event.preventDefault()
     }
 
 
