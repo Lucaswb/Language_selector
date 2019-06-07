@@ -15,8 +15,8 @@ h1 {
   box-shadow: 5px 5px 10px #888888;
 }
 
-.csscustomizer {
-  border: 4px black;
+.csscustomizer p {
+  font-size: 80px;
 }
 
 form#questionnaire {
@@ -35,6 +35,7 @@ form#questionnaire {
   margin-top: 5%;
 }
 
-button.btn-info {
-  border-radius: 2px
+button {
+  border-radius: 2px;
+  margin-left: 50px;
 }
