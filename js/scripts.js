@@ -33,18 +33,19 @@ $(document).ready(function() {
       if (prom3>0){
         result+=prom3;
         lang_num=(result%13)+1
-
-        alert("hi")
-
-
       } else {
         lang_num=(result%13)+1
 
       }
       var lang_name = prog["program"+lang_num]
 
+
       $("#reveal").show()
+      $("#languageReveal p").remove();
+      debugger;
+      $("#languageReveal").append("<p></p>");
       $("#languageReveal p").append(lang_name);
+      alert("hi")
       event.preventDefault()
     } else {
       alert("this program requires your age and your name");
