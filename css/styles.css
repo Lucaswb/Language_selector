@@ -15,11 +15,25 @@ h1 {
   box-shadow: 5px 5px 10px #888888;
 }
 
-.csscustomizer p {
-  font-size: 80px;
+ #reveal h2{
+  color: black;
+  border-radius: 5px;
+  background-color: #555555;
+  text-align: center;
+  box-shadow: 5px 5px 10px #888888;
+  color: white;
+}
+  #reveal p{
+   color: black;
+   border-radius: 5px;
+   background-color: #555555;
+   text-align: center;
+   font-size: 50px;
+   box-shadow: 5px 5px 10px #888888;
+   color: white;
 }
 
-form#questionnaire {
+#questionnaire {
   display: none;
 }
 #reveal {
@@ -33,9 +47,4 @@ form#questionnaire {
 
 .row {
   margin-top: 5%;
-}
-
-button {
-  border-radius: 2px;
-  margin-left: 50px;
 }
